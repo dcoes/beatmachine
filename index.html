@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beat Sequencer</title>
+</head>
+    <div class="main-header">
+        
+        <span>
+            <h1>Beat Sequencer</h1>
+        </span>
+        <span>
+            <ul>
+                <li>
+                    <label for="tempo" name="tempo">Tempo/BPM</label>
+                    <input type="text" id="tempo">    
+                </li>
+                <li>
+                    <!--A single button will play and stop the sequence. Icons will switch in css??-->
+                    <button class="play-button"> play</button>
+                </li>
+            </ul>
+                
+        </span>
+        <br>
+    </div>
+
+    <div class="comp-area">
+        
+        <span>
+            <h2>Snare Drum</h2>
+            <label for="resolution">resolution</label>
+            <input type="range" min="4" max="32" step="4">
+            <!--Here's how I think to do this. Let's set up a js listener to watch where this range is.
+            That will determine the columns to be set in the following element (span?) below.-->
+        </span>
+        <span>
+            <ul> <!--This list will scale in increments of 4 depending on the resolution above.-->
+                <!--Note: in the li elements below, they are repetitive. Can we build them modularly?? The example represents a single measure.-->
+                <li>
+                    <!--This is a single element that will record wheter or not a not is played at this point in time.-->
+                    <input type="checkbox" name="note" id="note">
+                </li>
+
+                <li>
+                    <!--This is a single element that will record wheter or not a not is played at this point in time.-->
+                    <input type="checkbox" name="note" id="note">
+                </li>
+                <li>
+                    <!--This is a single element that will record wheter or not a not is played at this point in time.-->
+                    <input type="checkbox" name="note" id="note">
+                </li>
+                <li>
+                    <!--This is a single element that will record wheter or not a not is played at this point in time.-->
+                    <input type="checkbox" name="note" id="note">
+                </li>
+            </ul>
+        </span>
+
+    </div>
+<body>
+    
+</body>
+</html>

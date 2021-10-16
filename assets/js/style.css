@@ -1,0 +1,12 @@
+.main-header {
+    background-color:black;
+    box-sizing: border-box;
+    width:100vw;
+    color:white;
+    border-radius: 10%;
+}
+
+.main-header >ul {
+    list-style-type: none;
+    display:block;
+}
