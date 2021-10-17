@@ -1,0 +1,21 @@
+* {
+    margin: 5;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.window {
+    background-color:lightgray;
+    border-color: dimgray;
+    margin-left:auto;
+    margin-right:auto;
+    width:85%;
+    border-radius: 5px;
+    display:block;
+}
+
+.window li {
+    display:inline-block;
+    list-style-type: none;
+}

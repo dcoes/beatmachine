@@ -5,21 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beat Sequencer</title>
+
+    <!--Imports in the css:-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!--Imports in the javascricpt:-->
+    <script src="assets/js/script.js"></script>
 </head>
-    <div class="main-header">
+    <div class="window">
         
         <span>
             <h1>Beat Sequencer</h1>
         </span>
         <span>
-            <ul>
+            <ul>                
                 <li>
                     <label for="tempo" name="tempo">Tempo/BPM</label>
-                    <input type="text" id="tempo">    
+                    <INPUT TYPE="NUMBER" MIN="0" STEP="1" VALUE="120" size="2" id="tempo">    
                 </li>
                 <li>
                     <!--A single button will play and stop the sequence. Icons will switch in css??-->
-                    <button class="play-button"> play</button>
+                    <button id="play-pause" data-playing="false">Play</button>
                 </li>
             </ul>
                 
@@ -27,7 +33,7 @@
         <br>
     </div>
 
-    <div class="comp-area">
+    <div class="window">
         
         <span>
             <h2>Snare Drum</h2>
@@ -35,6 +41,8 @@
             <input type="range" min="4" max="32" step="4">
             <!--Here's how I think to do this. Let's set up a js listener to watch where this range is.
             That will determine the columns to be set in the following element (span?) below.-->
+            <label for="volume">volume</label>
+            <input type="range" min=0 max=100 step=1>
         </span>
         <span>
             <ul> <!--This list will scale in increments of 4 depending on the resolution above.-->
@@ -42,6 +50,7 @@
                 <li>
                     <!--This is a single element that will record wheter or not a not is played at this point in time.-->
                     <input type="checkbox" name="note" id="note">
+                    <audio src="assets/sounds/snare01.mp3"></audio>
                 </li>
 
                 <li>
