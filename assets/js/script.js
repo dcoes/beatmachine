@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function playNote() {
         var noteChecked = document.getElementById("note").checked;
-        alert(noteChecked);
+        alert("note was requested");
       }
 
 });

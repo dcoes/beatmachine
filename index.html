@@ -49,21 +49,9 @@
                 <!--Note: in the li elements below, they are repetitive. Can we build them modularly?? The example represents a single measure.-->
                 <li>
                     <!--This is a single element that will record wheter or not a not is played at this point in time.-->
-                    <input type="checkbox" name="note" id="note">
-                    <audio src="assets/sounds/snare01.mp3"></audio>
-                </li>
+                    <input type="checkbox" onclick="playNote()"  id="note" unchecked />
 
-                <li>
-                    <!--This is a single element that will record wheter or not a not is played at this point in time.-->
-                    <input type="checkbox" name="note" id="note">
-                </li>
-                <li>
-                    <!--This is a single element that will record wheter or not a not is played at this point in time.-->
-                    <input type="checkbox" name="note" id="note">
-                </li>
-                <li>
-                    <!--This is a single element that will record wheter or not a not is played at this point in time.-->
-                    <input type="checkbox" name="note" id="note">
+                    <audio src="assets/sounds/snare01.mp3"></audio>
                 </li>
             </ul>
         </span>
