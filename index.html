@@ -11,6 +11,11 @@
     
     <!--Imports in the javascricpt:-->
     <script src="assets/js/script.js"></script>
+
+    <!--Imports the Tone.js Library (contains a lot of the things you want to work with audio, even midi.):-->
+    <script src="assets/js/Tone.js"></script>
+
+    <!--Alternate link available here:  https://cdnjs.cloudflare.com/ajax/libs/tone/0.12.63/Tone.js  -->
 </head>
     <div class="window">
         
@@ -44,14 +49,22 @@
             <label for="volume">volume</label>
             <input type="range" min=0 max=100 step=1>
         </span>
+
         <span>
             <ul> <!--This list will scale in increments of 4 depending on the resolution above.-->
                 <!--Note: in the li elements below, they are repetitive. Can we build them modularly?? The example represents a single measure.-->
                 <li>
                     <!--This is a single element that will record wheter or not a not is played at this point in time.-->
-                    <input type="checkbox" onclick="playNote()"  id="note" unchecked />
+                    <input type="checkbox" id="note" unchecked />
+                    <input type="checkbox" id="note" unchecked />
+                    <input type="checkbox" id="note" unchecked />
+                    <input type="checkbox" id="note" unchecked />
+                    <input type="checkbox" id="note" unchecked />
+                    <input type="checkbox" id="note" unchecked />
+                    <input type="checkbox" id="note" unchecked />
+                    <input type="checkbox" id="note" unchecked />
 
-                    <audio src="assets/sounds/snare01.mp3"></audio>
+
                 </li>
             </ul>
         </span>
